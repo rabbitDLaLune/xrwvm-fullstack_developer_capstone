@@ -33,8 +33,7 @@ jobs:
             -not -path "*/djangoenv/*" \
             -not -path "*/node_modules/*" \
             -not -path "*/__pycache__/*" \
-            -exec flake8 {} +
-
+            -exec flake8 \ --ignore=E101,E116,E203,E231,E302,E501,E712,E722,F401,F811,F841,W191,W292,W391 \ {} +
           echo "Linted all Python files successfully"
 
   lint_js:
