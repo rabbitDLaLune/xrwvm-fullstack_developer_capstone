@@ -28,15 +28,15 @@ urlpatterns = [
     ),
 
     path(
-    route="get_cars",
-    view=views.get_cars,
-    name="getcars",
+        route="get_cars",
+        view=views.get_cars,
+        name="getcars",
     ),
 
     path(
-    route="get_dealers",
-    view=views.get_dealerships,
-    name="get_dealers"
+        route='get_dealers/',
+        view=views.get_dealerships,
+        name='get_dealers'
     ),
 
     path(
@@ -58,9 +58,9 @@ urlpatterns = [
     ),
 
     path(
-    route="add_review",
-    view=views.add_review,
-    name="add_review"
+        route="add_review",
+        view=views.add_review,
+        name="add_review"
     ),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -19,7 +19,7 @@ const dealerships_data = JSON.parse(
 );
 
 mongoose
-  .connect('mongodb://mongo_db:27017/', {
+  .connect('mongodb://localhost:27017/', {
     dbName: 'dealershipsDB',
   })
   .then(() => {
