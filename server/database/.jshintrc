@@ -2,7 +2,10 @@
 {
   "esversion": 8,
   "node": true,
+  "browser": false,
   "undef": true,
-  "unused": false
+  "unused": false,
+  "asi": false,
+  "eqeqeq": false
 }
 
